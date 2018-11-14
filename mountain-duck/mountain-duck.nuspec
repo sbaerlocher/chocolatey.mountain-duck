@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mountain-duck</id>
-    <version>2.6.5.9650</version>
+    <version>2.6.7.9723</version>
     <title>Mountain Duck</title>
     <authors>iterate GmbH</authors>
     <owners>sbaerlocher</owners>
@@ -12,6 +12,10 @@
     <description><![CDATA[
 Mountain Duck lets you mount server and cloud storage as a disk in the Finder.app on Mac and the File Explorer on Windows. Open remote files with any application and work like on a local volume.
 
+## Note
+
+Mountain Duck is a paid software, it can be installed as trial version.
+
 ## Package Parameters
 
 * `/CleanStartmenu` Removes frequently used Mountain Duck shortcuts from the Startmenu.
@@ -19,7 +23,7 @@ Mountain Duck lets you mount server and cloud storage as a disk in the Finder.ap
     <summary>Libre FTP, SFTP, WebDAV, S3 and OpenStack Swift browser for Mac and Windows</summary>
     <releaseNotes>https://mountainduck.io/changelog//</releaseNotes>
     <packageSourceUrl>https://github.com/sbaerlocher/chocolatey.mountain-duck</packageSourceUrl>
-    <tags>Libre FTP SFTP WebDAV S3 OpenStack Swift</tags>
+    <tags>Libre FTP SFTP WebDAV S3 OpenStack Swift trial</tags>
     <dependencies>
       <dependency id="dotnet4.5.2" />
     </dependencies>
