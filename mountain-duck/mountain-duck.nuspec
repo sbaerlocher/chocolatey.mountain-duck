@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mountain-duck</id>
-    <version>2.7.1.9840</version>
+    <version>3.0.1.14013</version>
     <title>Mountain Duck</title>
     <authors>iterate GmbH</authors>
     <owners>sbaerlocher</owners>
