@@ -35,8 +35,8 @@ deploy:
     repository: 'https://push.chocolatey.org/'
     key: "{{ lookup('env','CHOCOLATEY_ORG_API_KEY') }}"
   - provider: github
-    name: 'avarins@sbaerlo.ch'
-    email: 'avarins'
+    name: 'avarins'
+    email: 'avarins@sbaerlo.ch'
     url: github.com/sbaerlocher/chocolatey.mountain-duck.git
     key: "{{ lookup('env','GITHUB_API_KEY') }}"
 
