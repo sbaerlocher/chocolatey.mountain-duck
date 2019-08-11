@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mountain-duck</id>
+    <version>3.0.1.14013</version>
+    <title>Mountain Duck</title>
+    <authors>iterate GmbH</authors>
+    <owners>sbaerlocher</owners>
+    <projectUrl>https://mountainduck.io</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/sbaerlocher/chocolatey.mountain-duck@master/icon/mountain-duck.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+Mountain Duck lets you mount server and cloud storage as a disk in the Finder.app on Mac and the File Explorer on Windows. Open remote files with any application and work like on a local volume.
+
+## Note
+
+Mountain Duck is a paid software, it can be installed as trial version.
+
+## Package Parameters
+
+- `/CleanStartmenu` Removes frequently used Mountain Duck shortcuts from the Startmenu.
+]]></description>
+    <summary>Libre FTP, SFTP, WebDAV, S3 and OpenStack Swift browser for Mac and Windows</summary>
+    <releaseNotes>https://mountainduck.io/changelog/</releaseNotes>
+    <packageSourceUrl>https://github.com/sbaerlocher/chocolatey.mountain-duck</packageSourceUrl>
+    <tags>Libre FTP SFTP WebDAV S3 OpenStack Swift trial</tags>
+    <dependencies>
+      <dependency id="dotnet4.5.2"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools/**" target="tools"/>
+  </files>
+</package>
