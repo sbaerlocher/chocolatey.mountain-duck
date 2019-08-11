@@ -1,0 +1,48 @@
+---
+# chocomilk vars
+
+# Package Changelog
+changelog: 'https://mountainduck.io/changelog'
+
+# Regex for Version
+version: "{{ register_changelog.content |
+  regex_search('.*msi.*') |
+  regex_search('(\\d+)(.)(\\d+)(.)(\\d+)(.)(\\d+)')
+  }}"
+
+# Download URL
+url: 'https://dist.mountainduck.io/Mountain%20Duck%20Installer-{{ version }}.msi'
+# url64:
+
+searchreplace:
+  'tools/chocolateyinstall.ps1':
+    - regwxp: (^\s*[$]*urlPackage\s*=\s*)('.*')
+      replace: '$urlPackage = "{{ url }}"'
+    - regwxp: (^\s*[$]*checksumPackage\s*=\s*)('.*')
+      replace: '$checksumPackage = "{{ file_hash }}"'
+
+# readme to description
+readme:
+  start: 5
+  end: 16
+
+# deploy
+deploy:
+  - provider: chocolatey
+    repository: 'https://nuget.itigo.tech/upload'
+    key: "{{ lookup('env','CHOCOLATEY_ITIGO_API_KEY') }}"
+  - provider: chocolatey
+    repository: 'https://push.chocolatey.org/'
+    key: "{{ lookup('env','CHOCOLATEY_ORG_API_KEY') }}"
+  - provider: github
+    name: 'avarins@sbaerlo.ch'
+    email: 'avarins'
+    url: github.com/sbaerlocher/chocolatey.mountain-duck.git
+    key: "{{ lookup('env','GITHUB_API_KEY') }}"
+
+# Notification
+notifications:
+  - provider: mattermost
+    url: 'https://matters.itigo.tech'
+    key: "{{ lookup('env','MATTERMOST_API_KEY') }}"
+    channel: 'software-packages'
