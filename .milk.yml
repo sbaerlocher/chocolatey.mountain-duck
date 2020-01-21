@@ -16,9 +16,9 @@ url: 'https://dist.mountainduck.io/Mountain%20Duck%20Installer-{{ version }}.msi
 
 searchreplace:
   'tools/chocolateyinstall.ps1':
-    - regwxp: (^\s*[$]*urlPackage\s*=\s*)('.*')
+    - regwxp: (^\s*[$]*urlPackage\s*=\s*)(".*")
       replace: '$urlPackage = "{{ url }}"'
-    - regwxp: (^\s*[$]*checksumPackage\s*=\s*)('.*')
+    - regwxp: (^\s*[$]*checksumPackage\s*=\s*)(".*")
       replace: '$checksumPackage = "{{ file_hash }}"'
 
 # readme to description
