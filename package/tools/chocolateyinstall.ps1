@@ -5,7 +5,7 @@ $ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $PackageParameters = Get-PackageParameters
 $urlPackage = "https://dist.mountainduck.io/Mountain%20Duck%20Installer-3.3.4.15443.msi"
-$checksumPackage = "196B421AFDE2C450CA0ADAB902ECB62CD380C15C7BA6D912B12B0BE3AE2C549BE380334F1DD8EC88B88A041A9FDBC158EB74BB596C6FC4C9E619D8168BE72022"
+$checksumPackage = "196b421afde2c450ca0adab902ecb62cd380c15c7ba6d912b12b0be3ae2c549be380334f1dd8ec88b88a041a9fdbc158eb74bb596c6fc4c9e619d8168be72022"
 $checksumTypePackage = 'SHA512'
 
 Import-Module -Name "$($toolsDir)\helpers.ps1"
