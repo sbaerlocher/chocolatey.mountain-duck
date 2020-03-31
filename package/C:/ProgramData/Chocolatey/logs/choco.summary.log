@@ -1,0 +1,11 @@
+﻿2020-03-31 18:26:15,713 6 [INFO ] - ============================================================
+2020-03-31 18:26:16,289 6 [INFO ] - Chocolatey v0.10.15.0
+2020-03-31 18:26:16,401 6 [WARN ] - Directory 'C:/ProgramData/Chocolatey/lib' does not exist.
+2020-03-31 18:26:16,479 6 [INFO ] - 2 validations performed. 2 success(es), 0 warning(s), and 0 error(s).
+2020-03-31 18:26:16,497 6 [WARN ] - 
+Chocolatey is not an official build (bypassed with --allow-unofficial).
+ If you are seeing this message and it is not expected, your system may
+ now be in a bad state. Only official builds are to be trusted.
+
+2020-03-31 18:26:16,684 6 [INFO ] - Attempting to build package from 'mountain-duck.nuspec'.
+2020-03-31 18:26:16,837 6 [INFO ] - Successfully created package '/home/travis/build/sbaerlocher/chocolatey.mountain-duck/mountain-duck.3.3.6.15539.nupkg'

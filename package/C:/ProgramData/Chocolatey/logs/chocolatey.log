@@ -1,0 +1,121 @@
+﻿2020-03-31 18:26:15,657 6 [DEBUG] - XmlConfiguration is now operational
+2020-03-31 18:26:15,713 6 [INFO ] - ============================================================
+2020-03-31 18:26:15,787 6 [DEBUG] - Attempting to create directory "/home/travis/build/sbaerlocher/chocolatey.mountain-duck/package/C:/ProgramData/Chocolatey/config".
+2020-03-31 18:26:16,241 6 [DEBUG] - Attempting to create directory "/tmp/chocolatey".
+2020-03-31 18:26:16,284 6 [DEBUG] - Attempting to replace "C:/ProgramData/Chocolatey/config/chocolatey.config"
+ with "C:/ProgramData/Chocolatey/config/chocolatey.config.6.update".
+ Backup placed at "C:/ProgramData/Chocolatey/config/chocolatey.config.backup".
+2020-03-31 18:26:16,285 6 [DEBUG] - Attempting to copy "C:/ProgramData/Chocolatey/config/chocolatey.config.6.update"
+ to "C:/ProgramData/Chocolatey/config/chocolatey.config".
+2020-03-31 18:26:16,286 6 [DEBUG] - Attempting to delete file "C:/ProgramData/Chocolatey/config/chocolatey.config.6.update".
+2020-03-31 18:26:16,289 6 [INFO ] - Chocolatey v0.10.15.0
+2020-03-31 18:26:16,292 6 [DEBUG] - Chocolatey is running on Linux v 4.15.0.1028
+2020-03-31 18:26:16,292 6 [DEBUG] - Attempting to delete file "opt/chocolatey/chocolatey.dll.old".
+2020-03-31 18:26:16,293 6 [DEBUG] - Attempting to delete file "/opt/chocolatey/choco.exe.old".
+2020-03-31 18:26:16,294 6 [DEBUG] - Attempting to create directory "/home/travis/build/sbaerlocher/chocolatey.mountain-duck/package/C:/ProgramData/Chocolatey/helpers".
+2020-03-31 18:26:16,295 6 [DEBUG] - Attempting to create directory "/home/travis/build/sbaerlocher/chocolatey.mountain-duck/package/C:/ProgramData/Chocolatey/helpers/functions".
+2020-03-31 18:26:16,307 6 [DEBUG] - Attempting to create directory "/home/travis/build/sbaerlocher/chocolatey.mountain-duck/package/C:/ProgramData/Chocolatey/redirects".
+2020-03-31 18:26:16,309 6 [DEBUG] - Attempting to create directory "/home/travis/build/sbaerlocher/chocolatey.mountain-duck/package/C:/ProgramData/Chocolatey/tools".
+2020-03-31 18:26:16,319 6 [DEBUG] - Command line: /opt/chocolatey/choco.exe pack -vd mountain-duck.nuspec --outputdirectory /home/travis/build/sbaerlocher/chocolatey.mountain-duck --allow-unofficial
+2020-03-31 18:26:16,320 6 [DEBUG] - Received arguments: pack -vd mountain-duck.nuspec --outputdirectory /home/travis/build/sbaerlocher/chocolatey.mountain-duck --allow-unofficial
+2020-03-31 18:26:16,389 6 [DEBUG] - RemovePendingPackagesTask is now ready and waiting for PreRunMessage.
+2020-03-31 18:26:16,397 6 [DEBUG] - Sending message 'PreRunMessage' out if there are subscribers...
+2020-03-31 18:26:16,400 6 [DEBUG] - [Pending] Removing all pending packages that should not be considered installed...
+2020-03-31 18:26:16,401 6 [WARN ] - Directory 'C:/ProgramData/Chocolatey/lib' does not exist.
+2020-03-31 18:26:16,470 6 [DEBUG] - Performing validation checks.
+2020-03-31 18:26:16,474 6 [DEBUG] - Global Configuration Validation Checks:
+2020-03-31 18:26:16,475 6 [DEBUG] -  - Package Exit Code / Exit On Reboot = Checked
+2020-03-31 18:26:16,476 6 [DEBUG] - System State Validation Checks:
+2020-03-31 18:26:16,479 6 [INFO ] - 2 validations performed. 2 success(es), 0 warning(s), and 0 error(s).
+2020-03-31 18:26:16,479 6 [DEBUG] - The source 'https://chocolatey.org/api/v2/' evaluated to a 'normal' source type
+2020-03-31 18:26:16,480 6 [DEBUG] - 
+NOTE: Hiding sensitive configuration data! Please double and triple
+ check to be sure no sensitive data is shown, especially if copying
+ output to a gist for review.
+2020-03-31 18:26:16,496 6 [DEBUG] - Configuration: CommandName='pack'|CacheLocation='/tmp/chocolatey'|
+ContainsLegacyPackageInstalls='True'|
+CommandExecutionTimeoutSeconds='2700'|WebRequestTimeoutSeconds='30'|
+Sources='https://chocolatey.org/api/v2/'|SourceType='normal'|
+Debug='True'|Verbose='True'|Trace='False'|Force='False'|Noop='False'|
+HelpRequested='False'|UnsuccessfulParsing='False'|RegularOutput='True'|
+QuietOutput='False'|PromptForConfirmation='True'|AcceptLicense='False'|
+AllowUnofficialBuild='True'|Input='mountain-duck.nuspec'|
+AllVersions='False'|SkipPackageInstallProvider='False'|
+OutputDirectory='/home/travis/build/sbaerlocher/chocolatey.mountain-duck'|
+
+Prerelease='False'|ForceX86='False'|OverrideArguments='False'|
+NotSilent='False'|ApplyPackageParametersToDependencies='False'|
+ApplyInstallArgumentsToDependencies='False'|IgnoreDependencies='False'|
+AllowMultipleVersions='False'|AllowDowngrade='False'|
+ForceDependencies='False'|Information.PlatformType='Linux'|
+Information.PlatformVersion='4.15.0.1028'|
+Information.PlatformName='Linux'|
+Information.ChocolateyVersion='0.10.15.0'|
+Information.ChocolateyProductVersion='0.10.15.0'|
+Information.FullName='chocolatey, Version=0.10.15.0, Culture=neutral, PublicKeyToken=fd112f53c3ab578c'|
+
+Information.Is64BitOperatingSystem='True'|
+Information.Is64BitProcess='True'|Information.IsInteractive='False'|
+Information.UserName='root'|Information.UserDomainName='41007d9c49a7'|
+Information.IsUserAdministrator='False'|
+Information.IsUserSystemAccount='False'|
+Information.IsUserRemoteDesktop='False'|
+Information.IsUserRemote='True'|
+Information.IsProcessElevated='False'|
+Information.IsLicensedVersion='False'|Information.LicenseType='Foss'|
+Information.CurrentDirectory='/home/travis/build/sbaerlocher/chocolatey.mountain-duck/package'|
+
+Features.AutoUninstaller='True'|Features.ChecksumFiles='True'|
+Features.AllowEmptyChecksums='False'|
+Features.AllowEmptyChecksumsSecure='True'|
+Features.FailOnAutoUninstaller='False'|
+Features.FailOnStandardError='False'|Features.UsePowerShellHost='True'|
+Features.LogEnvironmentValues='False'|Features.LogWithoutColor='False'|
+Features.VirusCheck='False'|
+Features.FailOnInvalidOrMissingLicense='False'|
+Features.IgnoreInvalidOptionsSwitches='True'|
+Features.UsePackageExitCodes='True'|
+Features.UseEnhancedExitCodes='False'|
+Features.UseFipsCompliantChecksums='False'|
+Features.ShowNonElevatedWarnings='True'|
+Features.ShowDownloadProgress='True'|
+Features.StopOnFirstPackageFailure='False'|
+Features.UseRememberedArgumentsForUpgrades='False'|
+Features.IgnoreUnfoundPackagesOnUpgradeOutdated='False'|
+Features.SkipPackageUpgradesWhenNotInstalled='False'|
+Features.RemovePackageInformationOnUninstall='False'|
+Features.ExitOnRebootDetected='False'|
+Features.LogValidationResultsOnWarnings='True'|
+Features.UsePackageRepositoryOptimizations='True'|
+Features.ScriptsCheckLastExitCode='False'|
+ListCommand.LocalOnly='False'|
+ListCommand.IdOnly='False'|ListCommand.IncludeRegistryPrograms='False'|
+ListCommand.PageSize='25'|ListCommand.Exact='False'|
+ListCommand.ByIdOnly='False'|ListCommand.ByTagOnly='False'|
+ListCommand.IdStartsWith='False'|ListCommand.OrderByPopularity='False'|
+ListCommand.ApprovedOnly='False'|
+ListCommand.DownloadCacheAvailable='False'|
+ListCommand.NotBroken='False'|
+ListCommand.IncludeVersionOverrides='False'|
+UpgradeCommand.FailOnUnfound='False'|
+UpgradeCommand.FailOnNotInstalled='False'|
+UpgradeCommand.NotifyOnlyAvailableUpgrades='False'|
+UpgradeCommand.ExcludePrerelease='False'|
+NewCommand.AutomaticPackage='False'|
+NewCommand.UseOriginalTemplate='False'|SourceCommand.Command='unknown'|
+SourceCommand.Priority='0'|SourceCommand.BypassProxy='False'|
+SourceCommand.AllowSelfService='False'|
+SourceCommand.VisibleToAdminsOnly='False'|
+FeatureCommand.Command='unknown'|ConfigCommand.Command='unknown'|
+ApiKeyCommand.Remove='False'|PinCommand.Command='unknown'|
+OutdatedCommand.IgnorePinned='False'|Proxy.BypassOnLocal='True'|
+2020-03-31 18:26:16,497 6 [WARN ] - 
+Chocolatey is not an official build (bypassed with --allow-unofficial).
+ If you are seeing this message and it is not expected, your system may
+ now be in a bad state. Only official builds are to be trusted.
+
+2020-03-31 18:26:16,497 6 [DEBUG] - _ Chocolatey:ChocolateyPackCommand - Normal Run Mode _
+2020-03-31 18:26:16,684 6 [INFO ] - Attempting to build package from 'mountain-duck.nuspec'.
+2020-03-31 18:26:16,837 6 [INFO ] - Successfully created package '/home/travis/build/sbaerlocher/chocolatey.mountain-duck/mountain-duck.3.3.6.15539.nupkg'
+2020-03-31 18:26:16,839 6 [DEBUG] - Sending message 'PostRunMessage' out if there are subscribers...
+2020-03-31 18:26:16,841 6 [DEBUG] - Exiting with 0
